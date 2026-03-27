@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Oswald:wght@200..700&display=swap');
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #c8bfa8;
+  color: #1c2410;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-banner {
+  background-color: #1c2410;
+  color: #ede8dc;
+  width: 100%;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.site-banner h1 {
+  color: #8C7756;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.site-banner p {
+  color: #ede8dc;
+  margin: 0 auto 1.5rem auto;
+  font-size: 1.3rem;
+  max-width: 80%;
+  line-height: 1.5;
+}
+
+nav {
+  background-color: #1c2410;
+  border-top: 3px solid #8C7756;
+  padding: 15px;
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+}
+
+nav a {
+  color: #ede8dc;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav a::before {
+  content: '[';
+  opacity: 1;
+  margin-right: 4px;
+}
+
+nav a::after {
+  content: ']';
+  opacity: 1;
+  margin-left: 4px;
+}
+
+nav a:hover {
+  color: #6b7c45;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1, h2 {
+  color: #1c2410
+}
+
+h1 {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.1rem;
+}
+
+.exercise-table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+tr th {
+  background-color: #1c2410;
+  color: #ede8dc;
+  border: 1px solid #4a5e3a;
+  padding: 10px 14px;
+}
+
+tr td {
+  background-color: #ede8dc;
+  color: #1c2410;
+  border: 1px solid #7b4f2e;
+  padding: 8px 14px;
+}
+
+tr:hover td{
+  background-color: #dcc4a0;
+}
+
+.action-buttons{
+  width: 1%;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltip-text{
+  visibility: hidden;
+  background-color: #1c2410;
+  color: #ede8dc;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0 0.3s;
+  white-space: nowrap;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #ede8dc;
+  border: 1px solid #7b4f2e;
+  border-radius: 8px;
+}
+
+.form-container p {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.form-container label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1c2410
+}
+
+.form-container input, .form-container select {
+  margin: 0;
+}
+
+input, select {
+  padding: 8px 12px;
+  margin: 6px;
+  border: 1px solid #4a5e3a;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #ede8dc;
+  color: #1c2410;
+}
+
+input:focus, select:focus {
+  outline: 2px solid #6b7c45;
+}
+
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #6b7c45;
+  color: #ede8dc;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #7b4f2e;
+}
+
+svg {
+  cursor: pointer;
+  margin: 0 6px;
+  font-size: 1.2rem;
+  color: #4a5e3a;
+}
+
+svg:hover {
+  color: #1c2410;
+}
+
+footer {
+  background-color: #1c2410;
+  color: #ede8dc;
+  padding: 1rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+  text-align: center;
+}
